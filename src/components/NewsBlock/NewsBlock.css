@@ -1,0 +1,94 @@
+/* Base styling for all news blocks */
+.news-block {
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.news-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Variant 1: Big image on top */
+.news-block.big-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-image-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0; /* Rounded corners for top image */
+  margin-bottom: 15px;
+}
+
+/* Variant 2: Small image on the right */
+.news-block.small-right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.news-content {
+  flex: 1;
+  position: relative;
+}
+
+.news-image-right {
+  width: 120px; /* Small image width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 15px;
+  float: right; /* Make text flow around the image */
+}
+
+/* Variant 3: No image */
+.news-block.no-image .news-content {
+  width: 100%;
+}
+
+/* Common styling */
+.news-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: 'Arial', sans-serif; /* Stylish Font */
+  color: #333333;
+}
+
+.news-description {
+  font-size: 0.95em;
+  color: #666666;
+  margin-bottom: 10px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.news-full-text {
+  font-size: 0.95em;
+  color: #333333;
+  margin-bottom: 10px;
+  font-family: 'Verdana', sans-serif;
+}
+
+.expand-button {
+  font-size: 0.9em;
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  align-self: flex-start;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.expand-button:hover {
+  color: #0056b3;
+}

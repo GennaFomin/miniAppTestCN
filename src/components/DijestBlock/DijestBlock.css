@@ -1,0 +1,92 @@
+.dijest-block {
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  touch-action: pan-y; /* Prevents vertical scrolling from interfering with horizontal swipes */
+}
+
+.dijest-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.dijest-header h1 {
+  font-size: 1.5em;
+  align-self: center;
+  margin-bottom: 15px;
+  font-family: 'Georgia', serif;
+  color: #333333;
+}
+
+.category-chooser {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.category-button {
+  margin-right: 8px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.category-button.active {
+  background-image: linear-gradient(to right, rgb(255, 0, 0) , rgb(247, 0, 255));
+  color: #fff;
+}
+
+.category-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 20px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.feedback-buttons .IconButton,
+.report-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+}
+
+.feedback-buttons .IconButton:hover,
+.report-button:hover {
+  color: #0056b3;
+}
